@@ -55,8 +55,8 @@
 </head>
 <body>
     
-     <iframe src="https://biondocode.github.io/fraser/busca013.html" width="100%" height="100%" frameborder="0" title="Busca013"></iframe>
-    <button id="openIframe">Abrir Busca013</button> <div id="overlay"></div> <div id="iframeModal"> <iframe src="https://biondocode.github.io/fraser/busca013.html" frameborder="0"></iframe> <button id="closeIframe">Fechar</button> </div> <script src="https://biondocode.github.io/fraser/busca013pgn.js"></script>
+     <iframe src="https://biondocode.github.io/fraser/busca013.html" width="100%" height="100%" frameborder="0" title="Busca013"></iframe> <hr>
+     <input type="text" id="searchInput" placeholder="Digite aqui para buscar..."><button id="openIframe">Pesquisar</button> <div id="overlay"></div> <div id="iframeModal"> <iframe src="https://biondocode.github.io/fraser/busca013.html" frameborder="0"></iframe> <button id="closeIframe">Fechar</button> </div> <script src="https://biondocode.github.io/fraser/busca013pgn.js"></script>
     <script>document.getElementById('openFullscreenIframe').addEventListener('click', function() {
         document.getElementById('fullscreenIframe').style.display = 'block';
     });
@@ -65,6 +65,14 @@
         document.getElementById('fullscreenIframe').style.display = 'none';
     });
     </script>
+    <hr>
+    Terceiro
+    <input type="text" id="searchInput" placeholder="Digite aqui para buscar..."> <button id="openIframe">Pesquisar</button> <div id="overlay"></div> <div id="iframeModal"> <iframe id="searchIframe" src="https://biondocode.github.io/fraser/busca013.html" frameborder="0"></iframe> <button id="closeIframe">Fechar</button> </div> <script src="https://biondocode.github.io/fraser/busca013pgn.js"></script> 
+    <script> document.getElementById('openIframe').addEventListener('click', function() { 
+         document.getElementById('overlay').style.display = 'block'; document.getElementById('iframeModal').style.display = 'block'; 
+          const searchInputValue = document.getElementById('searchInput').value; const iframe = document.getElementById('searchIframe'); 
+           setTimeout(() => { const iframeDoc = iframe.contentDocument || iframe.contentWindow.document; const iframeInput = iframeDoc.getElementById('inputIdNoIframe');  iframeInput.value = searchInputValue; }, 500);  }); document.getElementById('closeIframe').addEventListener('click', function() { document.getElementById('overlay').style.display = 'none'; document.getElementById('iframeModal').style.display = 'none'; }); </script>
+    
 
 </body>
 </html>
