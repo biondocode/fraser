@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Santos",
+        "content": "Cidade portuária, referência no Brasil, conhecida pelo maior porto da América Latina.",
+        "description": "Informações sobre a cidade de Santos, cultura e economia.",
+        "url": "https://www.santos.sp.gov.br"
+    },
+    {
+        "title": "São Vicente",
+        "content": "Primeira vila fundada no Brasil, com importância histórica e belas praias.",
+        "description": "Saiba mais sobre a história e atrações de São Vicente.",
+        "url": "https://www.saovicente.sp.gov.br"
+    },
+    {
+        "title": "Praia Grande",
+        "content": "Famosa por sua orla extensa e infraestrutura voltada ao turismo.",
+        "description": "Descubra as praias e eventos de Praia Grande.",
+        "url": "https://www.praiagrande.sp.gov.br"
+    },
+    {
+        "title": "Guarujá",
+        "content": "Conhecida como a 'Pérola do Atlântico', com praias paradisíacas.",
+        "description": "Turismo e lazer no Guarujá, destinos e opções gastronômicas.",
+        "url": "https://www.guaruja.sp.gov.br"
+    },
+    {
+        "title": "Bertioga",
+        "content": "Destino de ecoturismo, com paisagens naturais e reservas ambientais.",
+        "description": "Informações sobre trilhas e praias de Bertioga.",
+        "url": "https://www.bertioga.sp.gov.br"
+    },
+    {
+        "title": "Cubatão",
+        "content": "Cidade industrial que se destacou no Brasil pelo renascimento ambiental.",
+        "description": "História e desenvolvimento de Cubatão.",
+        "url": "https://www.cubatao.sp.gov.br"
+    },
+    {
+        "title": "Mongaguá",
+        "content": "Pequena cidade litorânea conhecida pela tranquilidade e o Poço das Antas.",
+        "description": "Atrativos turísticos e natureza de Mongaguá.",
+        "url": "https://www.mongagua.sp.gov.br"
+    },
+    {
+        "title": "Itanhaém",
+        "content": "Uma das cidades mais antigas do Brasil, com praias e cultura rica.",
+        "description": "Explore a história e as belezas de Itanhaém.",
+        "url": "https://www.itanhaem.sp.gov.br"
+    },
+    {
+        "title": "Peruíbe",
+        "content": "Conhecida pela Estação Ecológica da Jureia e belezas naturais.",
+        "description": "Guia de turismo e natureza em Peruíbe.",
+        "url": "https://www.peruibe.sp.gov.br"
+    },
+    {
+        "title": "Porto de Santos",
+        "content": "Maior porto da América Latina, essencial para a economia brasileira.",
+        "description": "Conheça a história e operação do Porto de Santos.",
+        "url": "https://www.portodesantos.com.br"
+    },
+    {
+        "title": "Orquidário de Santos",
+        "content": "Jardim botânico e zoológico, referência na preservação ambiental.",
+        "description": "Descubra o Orquidário de Santos e suas atrações.",
+        "url": "https://www.santos.sp.gov.br/orquidario"
+    },
+    {
+        "title": "Aparecida",
+        "content": "Bairro famoso em Santos, com a Basílica de Aparecida e o Santuário do Embaré.",
+        "description": "Informações sobre o bairro Aparecida e suas atrações.",
+        "url": "https://www.santos.sp.gov.br"
+    },
+    {
+        "title": "Parque Estadual da Serra do Mar",
+        "content": "Reserva de Mata Atlântica que atravessa várias cidades da Baixada Santista.",
+        "description": "Trilhas e preservação ambiental no Parque Estadual da Serra do Mar.",
+        "url": "https://www.parqueserradomar.sp.gov.br"
+    },
+    {
+        "title": "Aquário Municipal de Santos",
+        "content": "Um dos aquários mais visitados do Brasil, com espécies marinhas variadas.",
+        "description": "Visite o Aquário Municipal e suas atrações educativas.",
+        "url": "https://www.santos.sp.gov.br/aquario"
+    },
+    {
+        "title": "Museu do Café",
+        "content": "Localizado em Santos, destaca a importância do café para a história do Brasil.",
+        "description": "Conheça o Museu do Café, um marco histórico nacional.",
+        "url": "https://www.museudocafe.org.br"
+    },
+    {
+        "title": "Teleférico de São Vicente",
+        "content": "Passeio com vista panorâmica para as praias e montanhas.",
+        "description": "Dicas para aproveitar o Teleférico de São Vicente.",
+        "url": "https://www.saovicente.sp.gov.br"
+    },
+    {
+        "title": "Mercado de Peixe de Santos",
+        "content": "Referência em frutos do mar frescos na região.",
+        "description": "Explore o Mercado de Peixe e suas ofertas.",
+        "url": "https://www.santos.sp.gov.br/mercado"
+    },
+    {
+        "title": "Tramway de Santos",
+        "content": "Histórico bonde turístico que percorre o centro histórico de Santos.",
+        "description": "Conheça o passeio de bonde em Santos.",
+        "url": "https://www.santos.sp.gov.br/tramway"
+    },
+    {
+        "title": "Praia do Gonzaga",
+        "content": "Praia urbana de Santos, conhecida por sua vida noturna e gastronomia.",
+        "description": "Descubra os atrativos da Praia do Gonzaga.",
+        "url": "https://www.santos.sp.gov.br"
+    },
+    {
+        "title": "Praia do Tombo",
+        "content": "Praia de Guarujá com bandeira azul, ideal para surfistas.",
+        "description": "Guia para aproveitar a Praia do Tombo no Guarujá.",
+        "url": "https://www.guaruja.sp.gov.br"
+    },
+    {
+        "title": "Monte Serrat",
+        "content": "Ponto turístico em Santos com vista privilegiada da cidade.",
+        "description": "Informações sobre o Monte Serrat e seu bondinho.",
+        "url": "https://www.santos.sp.gov.br/monte-serrat"
+    },
+    {
+        "title": "Ponte Pênsil de São Vicente",
+        "content": "Ponte histórica que liga São Vicente a Praia Grande.",
+        "description": "História e engenharia da Ponte Pênsil.",
+        "url": "https://www.saovicente.sp.gov.br"
+    },
+    {
+        "title": "Vila Belmiro",
+        "content": "Estádio do Santos FC, conhecido mundialmente.",
+        "description": "Visite a Vila Belmiro e sua história no futebol.",
+        "url": "https://www.santosfc.com.br"
+    },
+    {
+        "title": "Ilha Porchat",
+        "content": "Ponto turístico de São Vicente, com mirantes e vida noturna.",
+        "description": "Explore a Ilha Porchat e suas atrações.",
+        "url": "https://www.saovicente.sp.gov.br"
+    },
+    {
+        "title": "Jardim Botânico Chico Mendes",
+        "content": "Espaço verde em Santos para lazer e educação ambiental.",
+        "description": "Passeios e atividades no Jardim Botânico.",
+        "url": "https://www.santos.sp.gov.br/jardim-botanico"
+    },
+    {
+        "title": "Parque da Prainha",
+        "content": "Espaço cultural e natural em São Vicente.",
+        "description": "Visite o Parque da Prainha e conheça sua história.",
+        "url": "https://www.saovicente.sp.gov.br"
+    },
+    {
+        "title": "Praia de Pitangueiras",
+        "content": "Uma das mais conhecidas do Guarujá, com excelente infraestrutura.",
+        "description": "Guia de lazer na Praia de Pitangueiras.",
+        "url": "https://www.guaruja.sp.gov.br"
+    },
+    {
+        "title": "Praia de Boraceia",
+        "content": "Praia tranquila em Bertioga, ideal para famílias.",
+        "description": "Conheça a Praia de Boraceia e suas belezas.",
+        "url": "https://www.bertioga.sp.gov.br"
+    },
+    {
+        "title": "Estação Jureia-Itatins",
+        "content": "Área de preservação ambiental em Peruíbe, com rica biodiversidade.",
+        "description": "Trilhas e turismo ecológico na Jureia-Itatins.",
+        "url": "https://www.peruibe.sp.gov.br"
+    },
+    {
+        "title": "Poço das Antas",
+        "content": "Atrativo natural em Mongaguá, perfeito para quem busca tranquilidade.",
+        "description": "Dicas para visitar o Poço das Antas.",
+        "url": "https://www.mongagua.sp.gov.br"
+    }
+]
