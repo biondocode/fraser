@@ -285,7 +285,14 @@ Welcome -->
         <!-- Resultados do buscador aparecerão aqui -->
     </div>
     
-
+<script>window.addEventListener('message', (event) => {
+    if (event.data.searchQuery) {
+        const iframeSearchInput = document.getElementById('searchInputIframe');
+        iframeSearchInput.value = event.data.searchQuery;
+        iframeSearchInput.dispatchEvent(new Event('input'));
+    }
+});
+</script>
     
 </footer>
 
