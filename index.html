@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fratersrc</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+
+ body { font-family: Arial, sans-serif; }
+.result-item {
+
+    max-width:600px;
+    min-width:50%;
+    /* margin: 0 auto; */
+    /* float:right; */
+    /* height: 100px;  */
+    /* display:grid; */
+    /* max-height: 119px; */
+    /* background:linear-gradient(919deg, rgba(151, 227, 226, 0.163),white); */
+    /* display:flexbox; */
+    border-radius: 2px;
+    box-shadow: inset 20px 30px 10px rgba(255, 255, 255, 0.841);
+    margin-left: 130px; 
+    /* padding-left: 23px;  */
+    /* background-color: #f2f2f2e8;padding-top: 1px; */
+    border-bottom: 3px solid rgba(240, 244, 246, 0.538);
+    padding-bottom: 4px;
+ }
+.highlight { 
+    color: rgb(39, 111, 112);
+
+    font-weight: bold; }
+.result-link {
+
+    position: relative;
+    top:-10px;
+    /* display: flexbox; */
+    /* margin-top: 0 auto; */
+    /* margin-bottom: 20px; */
+    color: blue; 
+    text-decoration: underline;
+    /* float: right; */
+    /* top: 10px;  */
+}
+.result-header { 
+    font-weight: bold; 
+    /* margin-top:13px; */
+    /* margin-right:5px; */
+    /* font-size: 124px;  */
+}
+.result-description {
+        /* float: left; */
+        /* bottom:1px; */
+        /* padding: 3px; */
+        /* display: flexbox; */
+        /* margin-right:14px; */
+        /* padding-left:10px; */
+        /* right:3px; */
+        /* font-style: italic;  */
+        font-size: 12px;
+        /* color: rgba(69, 119, 126, 0.732);  */
+        color: SlateGrey;
+        /* color: rgb(51, 16, 107);  */
+        /* font-weight: bold; */
+        /* position:relative; */
+        /* top:20px; */
+    }
+
+    h2{
+        font-size: 43px;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 16px;
+        margin: auto 0;
+        position: static;
+        padding-top: 14px;
+
+        /* text-align: center; */
+    }
+
+    input {
+        align-self: center;
+    }
+
+    /* hr {border-color:aqua} */
+
+    span.a {
+        color:brown;
+    }
+    
+    span.b {
+        color:green;
+    }
+    span.s {
+        color:blue;
+    }
+    h2.purp{
+        color: rgb(39, 111, 112);
+    }
+
+    hr {
+        border-color: rgb(64, 175, 160);
+    }
+
+    #searchInput {
+        width: 300px;
+        padding: 2px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        color: #333;
+        outline: none;
+      }
+      
+      #searchInput:focus {
+        border-color: #007BFF;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+      
+          
+      #searchInput:focus {
+        border-color: #2c6981;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 162, 255, 0.5);
+      }
+      
+      #searchButton {
+        padding: 3px 8px;
+        margin: 3px 0;
+        background-color: #2691a1;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      #searchButton:hover {
+        background-color: #151413;
+      }
+      
+      #searchButton:active {
+        background-color: #004085;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
+      
+      #results-count {
+        font-size: 12px;
+        color: rgba(69, 119, 126, 0.732); 
+        margin-left: 10px;
+        font-weight: bold;
+      }
+    
+</style>
+</head>
+<body>
+
+<!-- <h2><span class="a">a</span>le<span class="b">b</span>u<span class="s">s</span>c<span class="a">a</span></h2> -->
+<h2 class="purp">FraterSearch</h2>
+
+
+<hr>
+    <cente><input type="text" id="searchInput" placeholder="Digite aqui para buscar...">
+<button id="searchButton">Pesquisar</button>
+
+<div id="results-count">Total de 0 resultado(s) encontrado(s)</center></div><p></p>
+<div id="results"></div>
+<hr>
+
+<script>
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const resultsContainer = document.getElementById('results');
+    let dataItems = []; // Variável para armazenar os dados carregados
+  
+    // Carrega os dados do arquivo JSON
+    async function loadData() {
+      try {
+        const response = await fetch('bmus.json');
+        dataItems = await response.json();
+      } catch (error) {
+        console.error('Erro ao carregar os dados:', error);
+      }
+    }
+  
+    // Função de busca
+    function search() {
+      const query = searchInput.value.toLowerCase().trim();
+  
+      resultsContainer.innerHTML = ''; // Limpa os resultados anteriores
+  
+      if (query) {
+        const queryWords = query.split(/\s+/); // Divide a busca em palavras separadas por espaços
+  
+        // Filtra os resultados que contenham todas as palavras da busca
+        const filteredItems = dataItems.filter(item => {
+          const searchableText = `${item.title} ${item.content} ${item.description}`.toLowerCase();
+          return queryWords.every(word => searchableText.includes(word)); // Verifica se todas as palavras estão presentes
+        });
+  
+        // Exibe a contagem de resultados
+        document.getElementById("results-count").textContent = `Total de ${filteredItems.length} resultado(s) encontrado(s).`;
+  
+        // Exibe os resultados ou mensagem de 'Nenhum resultado encontrado'
+        if (filteredItems.length > 0) {
+          filteredItems.forEach(item => {
+            const highlightedTitle = highlightMatches(item.title, queryWords);
+            const highlightedContent = highlightMatches(item.content, queryWords);
+  
+            // Cria o contêiner do resultado
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+  
+            // Adiciona o título com destaque
+            const titleElement = document.createElement('h3');
+            titleElement.innerHTML = highlightedTitle;
+            resultItem.appendChild(titleElement);
+  
+            // Adiciona a descrição
+            const descriptionElement = document.createElement('span');
+            descriptionElement.classList.add('result-description');
+            descriptionElement.innerText = item.description;
+            resultItem.appendChild(descriptionElement);
+  
+            // Adiciona o conteúdo principal com destaque
+            const contentElement = document.createElement('p');
+            contentElement.innerHTML = highlightedContent;
+            resultItem.appendChild(contentElement);
+  
+            // Cria o link "Saiba mais"
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = `${item.url}`;
+            link.target = "_blank";
+            link.classList.add('result-link');
+  
+            resultItem.appendChild(link);
+            resultsContainer.appendChild(resultItem);
+          });
+        } else {
+          resultsContainer.innerHTML = '<div>Nenhum resultado encontrado.</div>';
+        }
+      } else {
+        document.getElementById("results-count").textContent = "Total de 0 resultado(s) encontrado(s).";
+        resultsContainer.innerHTML = '<div>Por favor, digite um termo de busca.</div>';
+      }
+    }
+  
+    // Função para destacar correspondências
+ function highlightMatches(text, queryWords) {
+  let highlightedText = text;
+
+  queryWords.forEach(word => {
+    const regex = new RegExp(`(?<!<[^>]*)(${word})(?![^<]*>)`, 'gi');
+    highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+  });
+
+  return highlightedText;
+}
+  
+    // Carrega os dados e adiciona o evento de busca
+    loadData().then(() => {
+      searchButton.addEventListener('click', search);
+    });
+  </script>
+  
+
+
+<script>link.href = item.url; // Define o link com a URL do JSON
+    link.textContent = `Saiba mais sobre ${item.title}`; 
+    // Define o texto do link com o título
+    </script>
+
+
+<footer>
+   
+    <div id="results">
+        <!-- Resultados do buscador aparecerão aqui -->
+    </div>
+    
+
+    
+</footer>
+
+
+</body>
+</html>

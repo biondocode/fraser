@@ -1,0 +1,499 @@
+[
+    {
+      "title": "B3",
+      "content": "Bolsa de valores de São Paulo.",
+      "description": "Bolsa de valores de São Paulo › 🔒 https://www.b3.com.br — 🏠 link acessa a homepage",
+      "url": "https://b3.com.br"
+    },
+ 
+
+    {
+        "title": "Java",
+        "content": "Java  é uma linguagem robusta e amplamente usada. Oracle é a empresa desenvolvedora dessa tecnologia. <br> <p style='color: SlateGrey;font-size:10px'>🔗 acessa site da Oracle Corp, EUA, + 📂 diretório /java — <b>site oficial ✔</b>. <br>Link seguro desde 1998 🔒 Tags relacionadas: <i>ti, oracle, java, javascript, dev, coder.</i></p>",
+        "description": "Linguagem de programação ",
+        "url": "https://www.oracle.com/java"
+    },
+    {
+        "title": "'Contratinho'",
+        "content": "Andei sabendo.",
+        "description": "Empresa de software e computação em nuvem",
+        "url": "https://www.microsoft.com"
+    },
+    {
+        "title": "Google",
+        "content": "O Google é conhecido pelo seu mecanismo de busca, além de oferecer serviços como Gmail, Maps, e Android.",
+        "description": "Empresa de tecnologia e publicidade digital",
+        "url": "https://www.google.com"
+    },
+    {
+        "title": "Apple",
+        "content": "A Apple é famosa por dispositivos como iPhone, iPad e o sistema operacional iOS.",
+        "description": "Empresa de eletrônicos e software",
+        "url": "https://www.apple.com"
+    },
+    {
+        "title": "Amazon",
+        "content": "A Amazon é líder em comércio eletrônico e serviços de computação em nuvem.",
+        "description": "Comércio eletrônico e computação em nuvem",
+        "url": "https://www.amazon.com"
+    },
+    {
+        "title": "IBM",
+        "content": "A IBM é uma das maiores empresas de tecnologia focada em hardware e soluções empresariais.",
+        "description": "Soluções empresariais e computação em nuvem",
+        "url": "https://www.ibm.com"
+    },
+    {
+        "title": "Meta (Facebook)",
+        "content": "A Meta é a empresa por trás do Facebook, Instagram, e do metaverso.",
+        "description": "Redes sociais e realidade virtual",
+        "url": "https://www.meta.com"
+    },
+    {
+        "title": "Tesla",
+        "content": "Tesla desenvolve veículos elétricos e soluções de energia limpa.",
+        "description": "Empresa de veículos elétricos e energia",
+        "url": "https://www.tesla.com"
+    },
+    {
+        "title": "Intel",
+        "content": "A Intel é líder em design e fabricação de chips e processadores para computadores.",
+        "description": "Empresa de semicondutores",
+        "url": "https://www.intel.com"
+    },
+    {
+        "title": "NVIDIA",
+        "content": "A NVIDIA é conhecida pelo desenvolvimento de GPUs para jogos e inteligência artificial.",
+        "description": "Tecnologia gráfica e IA",
+        "url": "https://www.nvidia.com"
+    },
+    {
+        "title": "Adobe",
+        "content": "Adobe é famosa por softwares como Photoshop, Illustrator e soluções de design e marketing.",
+        "description": "Software de design e marketing digital",
+        "url": "https://www.adobe.com"
+    },
+    {
+        "title": "Salesforce",
+        "content": "Salesforce oferece plataformas de CRM e soluções de software empresarial.",
+        "description": "CRM e software empresarial",
+        "url": "https://www.salesforce.com"
+    },
+    {
+        "title": "Spotify",
+        "content": "Spotify é uma plataforma de streaming de música e podcasts.",
+        "description": "Streaming de áudio",
+        "url": "https://www.spotify.com"
+    },
+    {
+        "title": "Snap Inc.",
+        "content": "Snap Inc. é conhecida pelo Snapchat, uma popular rede social de compartilhamento de fotos.",
+        "description": "Redes sociais e AR",
+        "url": "https://www.snap.com"
+    },
+    {
+        "title": "Slack",
+        "content": "Slack é uma plataforma de comunicação para equipes e empresas.",
+        "description": "Comunicação empresarial",
+        "url": "https://slack.com"
+    },
+    {
+        "title": "Cisco",
+        "content": "Cisco desenvolve e vende produtos de rede e infraestrutura para empresas.",
+        "description": "Infraestrutura de rede",
+        "url": "https://www.cisco.com"
+    },
+    {
+        "title": "Dropbox",
+        "content": "Dropbox oferece armazenamento em nuvem e compartilhamento de arquivos.",
+        "description": "Armazenamento em nuvem",
+        "url": "https://www.dropbox.com"
+    },
+    {
+        "title": "Zoom",
+        "content": "Zoom é uma plataforma para videoconferências e comunicação remota.",
+        "description": "Videoconferência e comunicação",
+        "url": "https://www.zoom.us"
+    },
+  
+    {
+        "title": "Shopify",
+        "content": "Shopify fornece ferramentas para criação de lojas online e comércio eletrônico.",
+        "description": "Plataforma de e-commerce",
+        "url": "https://www.shopify.com"
+    },
+
+
+    {
+        "title": "Folha de S.Paulo",
+        "content": "A Folha de S.Paulo é um dos maiores jornais do Brasil, com ampla cobertura nacional e internacional.",
+        "description": "Jornal diário de São Paulo",
+        "url": "https://www.folha.uol.com.br"
+    },
+    {
+        "title": "O Globo",
+        "content": "O Globo é um dos principais jornais do Brasil, com sede no Rio de Janeiro, abordando temas variados.",
+        "description": "Jornal carioca com cobertura nacional",
+        "url": "https://www.globo.com"
+    },
+    {
+        "title": "Estado de Minas",
+        "content": "O Estado de Minas é um dos jornais mais tradicionais de Minas Gerais.",
+        "description": "Jornal mineiro",
+        "url": "https://www.em.com.br"
+    },
+    {
+        "title": "Correio Braziliense",
+        "content": "Correio Braziliense é um jornal baseado em Brasília, com foco em política e atualidades.",
+        "description": "Jornal de Brasília",
+        "url": "https://www.correiobraziliense.com.br"
+    },
+    {
+        "title": "Estadão",
+        "content": "O Estadão é um dos jornais mais antigos do Brasil, com cobertura abrangente de notícias e economia.",
+        "description": "Jornal tradicional de São Paulo",
+        "url": "https://www.estadao.com.br"
+    },
+    {
+        "title": "Zero Hora",
+        "content": "Zero Hora é um jornal de Porto Alegre, com foco no Rio Grande do Sul e notícias nacionais.",
+        "description": "Jornal gaúcho",
+        "url": "https://www.zh.clicrbs.com.br"
+    },
+    {
+        "title": "A Tribuna",
+        "content": "A Tribuna é um jornal de Santos, com cobertura regional e estadual.",
+        "description": "Jornal de Santos",
+        "url": "https://www.atribuna.com.br"
+    },
+    {
+        "title": "Diário do Nordeste",
+        "content": "O Diário do Nordeste é um jornal do Ceará com foco em notícias locais e regionais.",
+        "description": "Jornal cearense",
+        "url": "https://www.diariodonordeste.com.br"
+    },
+    {
+        "title": "A Gazeta",
+        "content": "A Gazeta é um dos principais jornais do Espírito Santo, com cobertura estadual.",
+        "description": "Jornal capixaba",
+        "url": "https://www.agazeta.com.br"
+    },
+    {
+        "title": "Correio da Bahia",
+        "content": "O Correio da Bahia é um jornal com sede em Salvador, focado em notícias da Bahia.",
+        "description": "Jornal baiano",
+        "url": "https://www.correio24horas.com.br"
+    },
+    {
+        "title": "Jornal do Commercio",
+        "content": "O Jornal do Commercio é um dos principais jornais de Pernambuco, com notícias regionais e nacionais.",
+        "description": "Jornal pernambucano",
+        "url": "https://www.jornaldocommercio.com.br"
+    },
+    {
+        "title": "O Tempo",
+        "content": "O Tempo é um jornal de Minas Gerais com foco em Belo Horizonte e notícias de Minas Gerais.",
+        "description": "Jornal mineiro",
+        "url": "https://www.otempo.com.br"
+    },
+    {
+        "title": "Gazeta do Povo",
+        "content": "A Gazeta do Povo é um jornal de Curitiba, Paraná, com cobertura nacional.",
+        "description": "Jornal paranaense",
+        "url": "https://www.gazetadopovo.com.br"
+    },
+    {
+        "title": "O Povo",
+        "content": "O Povo é um jornal tradicional do Ceará, com foco em notícias locais e regionais.",
+        "description": "Jornal cearense",
+        "url": "https://www.opovo.com.br"
+    },
+    {
+        "title": "Amazonas em Tempo",
+        "content": "Amazonas em Tempo é um dos principais jornais do estado do Amazonas.",
+        "description": "Jornal amazonense",
+        "url": "https://www.amazonasemtempo.com.br"
+    },
+    {
+        "title": "Jornal de Brasília",
+        "content": "O Jornal de Brasília é um jornal focado em notícias da capital federal.",
+        "description": "Jornal de Brasília",
+        "url": "https://jornaldebrasilia.com.br"
+    },
+    {
+        "title": "Meio Norte",
+        "content": "Meio Norte é um jornal do Piauí com cobertura de notícias regionais e estaduais.",
+        "description": "Jornal piauiense",
+        "url": "https://www.meionorte.com"
+    },
+    {
+        "title": "Correio do Povo",
+        "content": "Correio do Povo é um dos principais jornais do Rio Grande do Sul, com sede em Porto Alegre.",
+        "description": "Jornal gaúcho",
+        "url": "https://www.correiodopovo.com.br"
+    },
+    {
+        "title": "O Liberal",
+        "content": "O Liberal é um dos principais jornais do Pará, com foco em notícias regionais.",
+        "description": "Jornal paraense",
+        "url": "https://www.oliberal.com"
+    },
+    {
+        "title": "Notícias do Dia",
+        "content": "Notícias do Dia é um jornal de Florianópolis, Santa Catarina.",
+        "description": "Jornal catarinense",
+        "url": "https://ndmais.com.br"
+    },
+
+    
+        {
+            "title": "Flamengo",
+            "content": "Clube de Regatas do Flamengo, um dos mais populares do Brasil.",
+            "description": "Clube de Regatas do Flamengo › 🔒 https://www.flamengo.com.br — 🏠homepage",
+            "url": "https://www.flamengo.com.br"
+        },
+        {
+            "title": "Corinthians",
+            "content": "Sport Club Corinthians Paulista, conhecido como Timão.",
+            "description": "Sport Club Corinthians Paulista › 🔒 https://www.corinthians.com.br — 🏠homepage",
+            "url": "https://www.corinthians.com.br"
+        },
+        {
+            "title": "São Paulo",
+            "content": "São Paulo Futebol Clube, tricampeão mundial de clubes.",
+            "description": "São Paulo Futebol Clube › 🔒 https://www.saopaulofc.net",
+            "url": "https://www.saopaulofc.net"
+        },
+        {
+            "title": "Palmeiras",
+            "content": "Sociedade Esportiva Palmeiras, conhecida como Verdão.",
+            "description": "Sociedade Esportiva Palmeiras › 🔒 https://www.palmeiras.com.br — 🏠homepage",
+            "url": "https://www.palmeiras.com.br"
+        },
+        {
+            "title": "Grêmio",
+            "content": "Grêmio Foot-Ball Porto Alegrense, tricampeão da Libertadores.",
+            "description": "Grêmio Foot-Ball Porto Alegrense › 🔒 https://www.gremio.net",
+            "url": "https://www.gremio.net"
+        },
+        {
+            "title": "Internacional",
+            "content": "Sport Club Internacional, rival do Grêmio em Porto Alegre.",
+            "description": "Sport Club Internacional › 🔒 https://www.internacional.com.br — 🏠homepage",
+            "url": "https://www.internacional.com.br"
+        },
+        {
+            "title": "Atlético Mineiro",
+            "content": "Clube Atlético Mineiro, também conhecido como Galo.",
+            "description": "Clube Atlético Mineiro › 🔒 https://atletico.com.br — 🏠homepage",
+            "url": "https://atletico.com.br"
+        },
+        {
+            "title": "Cruzeiro",
+            "content": "Cruzeiro Esporte Clube, tetracampeão brasileiro.",
+            "description": "Cruzeiro Esporte Clube › 🔒 https://www.cruzeiro.com.br — 🏠homepage",
+            "url": "https://www.cruzeiro.com.br"
+        },
+        {
+            "title": "Vasco",
+            "content": "Club de Regatas Vasco da Gama, campeão da Libertadores de 1998.",
+            "description": "Club de Regatas Vasco da Gama › 🔒 https://www.vasco.com.br — 🏠homepage",
+            "url": "https://www.vasco.com.br"
+        },
+        {
+            "title": "Fluminense",
+            "content": "Fluminense Football Club, tricampeão brasileiro.",
+            "description": "Fluminense Football Club › 🔒 https://www.fluminense.com.br — 🏠homepage",
+            "url": "https://www.fluminense.com.br"
+        },
+        {
+            "title": "Botafogo",
+            "content": "Botafogo de Futebol e Regatas, conhecido pelo título de Glorioso.",
+            "description": "Botafogo de Futebol e Regatas › 🔒 https://www.botafogo.com.br — 🏠homepage",
+            "url": "https://www.botafogo.com.br"
+        },
+        {
+            "title": "Santos",
+            "content": "Santos Futebol Clube, onde jogou Pelé.",
+            "description": "Santos Futebol Clube › 🔒 https://www.santosfc.com.br — 🏠homepage",
+            "url": "https://www.santosfc.com.br"
+        },
+        {
+            "title": "Bahia",
+            "content": "Esporte Clube Bahia, tradicional clube nordestino.",
+            "description": "Esporte Clube Bahia › 🔒 https://www.esporteclubebahia.com.br — 🏠homepage",
+            "url": "https://www.esporteclubebahia.com.br"
+        },
+        {
+            "title": "Sport Recife",
+            "content": "Sport Club do Recife, conhecido como Leão da Ilha.",
+            "description": "Sport Club do Recife › 🔒 https://www.sportrecife.com.br — 🏠homepage",
+            "url": "https://www.sportrecife.com.br"
+        },
+        {
+            "title": "Ceará",
+            "content": "Ceará Sporting Club, conhecido como Vozão.",
+            "description": "Ceará Sporting Club › 🔒 https://www.cearasc.com",
+            "url": "https://www.cearasc.com"
+        },
+        {
+            "title": "Fortaleza",
+            "content": "Fortaleza Esporte Clube, rival do Ceará.",
+            "description": "Fortaleza Esporte Clube › 🔒 https://www.fortalezaec.net",
+            "url": "https://www.fortalezaec.net"
+        },
+        {
+            "title": "Athletico Paranaense",
+            "content": "Club Athletico Paranaense, conhecido como Furacão.",
+            "description": "Club Athletico Paranaense › 🔒 https://www.athletico.com.br — 🏠homepage",
+            "url": "https://www.athletico.com.br"
+        },
+        {
+            "title": "Coritiba",
+            "content": "Coritiba Foot Ball Club, conhecido como Coxa.",
+            "description": "Coritiba Foot Ball Club › 🔒 https://www.coritiba.com.br — 🏠homepage",
+            "url": "https://www.coritiba.com.br"
+        },
+        {
+            "title": "Chapecoense",
+            "content": "Associação Chapecoense de Futebol, uma das forças de Santa Catarina.",
+            "description": "Associação Chapecoense de Futebol › 🔒 https://chapecoense.com",
+            "url": "https://chapecoense.com"
+        },
+        {
+            "title": "Avaí",
+            "content": "Avaí Futebol Clube, conhecido como Leão da Ilha.",
+            "description": "Avaí Futebol Clube › 🔒 https://www.avai.com.br — 🏠homepage",
+            "url": "https://www.avai.com.br"
+        },
+
+        
+            {
+                "title": "Prefeitura de São Paulo",
+                "content": "Site oficial da Prefeitura de São Paulo com informações e serviços ao cidadão.",
+                "description": "Prefeitura da cidade de São Paulo",
+                "url": "https://www.prefeitura.sp.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Belo Horizonte",
+                "content": "Portal oficial da Prefeitura de Belo Horizonte, com notícias e serviços.",
+                "description": "Prefeitura de Belo Horizonte",
+                "url": "https://prefeitura.pbh.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Salvador",
+                "content": "Site da Prefeitura de Salvador, Bahia. Informações úteis e serviços online.",
+                "description": "Prefeitura de Salvador",
+                "url": "https://www.salvador.ba.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Curitiba",
+                "content": "Portal da Prefeitura de Curitiba, com serviços e informações da cidade.",
+                "description": "Prefeitura de Curitiba",
+                "url": "https://www.curitiba.pr.gov.br/"
+            },
+            {
+                "title": "Prefeitura do Rio de Janeiro",
+                "content": "Portal oficial da Prefeitura do Rio de Janeiro.",
+                "description": "Prefeitura do Rio de Janeiro",
+                "url": "https://www.prefeitura.rio/"
+            },
+            {
+                "title": "Prefeitura de Fortaleza",
+                "content": "Site oficial da Prefeitura de Fortaleza, Ceará.",
+                "description": "Prefeitura de Fortaleza",
+                "url": "https://www.fortaleza.ce.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Porto Alegre",
+                "content": "Portal da Prefeitura de Porto Alegre, Rio Grande do Sul.",
+                "description": "Prefeitura de Porto Alegre",
+                "url": "https://www.portoalegre.rs.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Recife",
+                "content": "Site oficial da Prefeitura do Recife, Pernambuco.",
+                "description": "Prefeitura de Recife",
+                "url": "https://www2.recife.pe.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Manaus",
+                "content": "Portal oficial da Prefeitura de Manaus, Amazonas.",
+                "description": "Prefeitura de Manaus",
+                "url": "https://www.manaus.am.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Florianópolis",
+                "content": "Site oficial da Prefeitura de Florianópolis, Santa Catarina.",
+                "description": "Prefeitura de Florianópolis",
+                "url": "https://www.pmf.sc.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Campinas",
+                "content": "Portal da Prefeitura de Campinas, São Paulo.",
+                "description": "Prefeitura de Campinas",
+                "url": "https://www.campinas.sp.gov.br/"
+            },
+            {
+                "title": "Prefeitura de São Luís",
+                "content": "Site oficial da Prefeitura de São Luís, Maranhão.",
+                "description": "Prefeitura de São Luís",
+                "url": "https://www.saoluis.ma.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Vitória",
+                "content": "Portal da Prefeitura de Vitória, Espírito Santo.",
+                "description": "Prefeitura de Vitória",
+                "url": "https://www.vitoria.es.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Natal",
+                "content": "Site oficial da Prefeitura de Natal, Rio Grande do Norte.",
+                "description": "Prefeitura de Natal",
+                "url": "https://www.natal.rn.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Goiânia",
+                "content": "Portal oficial da Prefeitura de Goiânia, Goiás.",
+                "description": "Prefeitura de Goiânia",
+                "url": "https://www.goiania.go.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Campo Grande",
+                "content": "Site oficial da Prefeitura de Campo Grande, Mato Grosso do Sul.",
+                "description": "Prefeitura de Campo Grande",
+                "url": "https://www.campogrande.ms.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Cuiabá",
+                "content": "Portal da Prefeitura de Cuiabá, Mato Grosso.",
+                "description": "Prefeitura de Cuiabá",
+                "url": "https://www.cuiaba.mt.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Belém",
+                "content": "Site oficial da Prefeitura de Belém, Pará.",
+                "description": "Prefeitura de Belém",
+                "url": "https://www.belem.pa.gov.br/"
+            },
+            {
+                "title": "Prefeitura de Teresina",
+                "content": "Portal oficial da Prefeitura de Teresina, Piauí.",
+                "description": "Prefeitura de Teresina",
+                "url": "https://pmt.pi.gov.br/"
+            },
+            {
+                "title": "Prefeitura de João Pessoa",
+                "content": "Site oficial da Prefeitura de João Pessoa, Paraíba.",
+                "description": "Prefeitura de João Pessoa",
+                "url": "https://www.joaopessoa.pb.gov.br/"
+            }
+        
+        
+    ]
+    
+
+
+
+
+
