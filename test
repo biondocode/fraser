@@ -1,1 +1,4 @@
-test
+function toggleMenu() {
+  const navLinks = document.querySelector('.custom-nav-links');
+  navLinks.classList.toggle('active');
+}
