@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navLinks = document.querySelector('.nav-links');
-  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.custom-nav-links');
+  const menuToggle = document.querySelector('.custom-menu-toggle');
 
   // Alternar visibilidade do menu
   menuToggle.addEventListener('click', () => {
