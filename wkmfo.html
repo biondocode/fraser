@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana no MFO</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            overflow: hidden;
+        }
+        .info-container {
+            position: relative;
+            height: 20px; /* Ajuste a altura para a altura do texto */
+        }
+        .info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .info.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="info-container">
+        <div class="info">Atividade Industrial</div>
+        <div class="info">Brasil</div>
+        <div class="info">Crescimento Econômico</div>
+        <div class="info">Dólar</div>
+        <div class="info">FED</div>
+        <div class="info">Índice PMI</div>
+        <div class="info">Inflação</div>
+        <div class="info">Livro Bege</div>
+        <div class="info">Medidas Fiscais</div>
+        <div class="info">Mercado de Trabalho</div>
+        <div class="info">Payroll</div>
+        <div class="info">PIB</div>
+        <div class="info">Relatório Focus</div>
+        <div class="info">Taxa de Juros</div>       
+    </div>
+</div>
+
+<script>
+    const infos = document.querySelectorAll('.info');
+    let currentIndex = 0;
+
+    function showNextInfo() {
+        // Ocultar o texto atual
+        infos[currentIndex].classList.remove('active');
+
+        // Esperar o tempo de transição antes de mostrar o próximo
+        setTimeout(() => {
+            // Atualizar o índice
+            currentIndex = (currentIndex + 1) % infos.length;
+
+            // Mostrar o próximo texto
+            infos[currentIndex].classList.add('active');
+        }, 1000); // Tempo de transição (mesmo valor que o `transition` no CSS)
+    }
+
+    // Inicializar com a primeira informação visível
+    infos[currentIndex].classList.add('active');
+
+    // Alternar as informações a cada 4 segundos (3s para exibição, 1s para transição)
+    setInterval(showNextInfo, 8000);
+</script>
+
+</body>
+</html>
