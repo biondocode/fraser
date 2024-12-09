@@ -298,7 +298,128 @@
     "content": "Como o nome sugere, oferece lindas paisagens naturais e rica cultura.",
     "description": "Explore Bonito, uma joia escondida no Pará.",
     "url": "https://www.bonito.pa.gov.br"
+}, 
+{
+    "title": "Bragança",
+    "content": "Conhecida como a 'Pérola do Caeté', famosa por suas tradições religiosas e o carimbó.",
+    "description": "Descubra Bragança, um dos principais destinos culturais do Pará.",
+    "url": "https://www.braganca.pa.gov.br"
+},
+{
+    "title": "Brasil Novo",
+    "content": "Uma cidade jovem, com economia baseada na agricultura e paisagens encantadoras.",
+    "description": "Conheça Brasil Novo e sua conexão com a natureza.",
+    "url": "https://www.brasilnovo.pa.gov.br"
+},
+{
+    "title": "Brejo Grande do Araguaia",
+    "content": "Cidade acolhedora às margens do Rio Araguaia, com belas paisagens naturais.",
+    "description": "Explore a serenidade de Brejo Grande do Araguaia.",
+    "url": "https://www.brejograndedoaraguaia.pa.gov.br"
+},
+{
+    "title": "Breu Branco",
+    "content": "Conhecida por suas belas praias de água doce e represas.",
+    "description": "Descubra Breu Branco e seus encantos naturais.",
+    "url": "https://www.breubranco.pa.gov.br"
+},
+{
+    "title": "Breves",
+    "content": "Uma das principais cidades do Marajó, conhecida por sua cultura e belezas fluviais.",
+    "description": "Visite Breves, a porta de entrada para a ilha do Marajó.",
+    "url": "https://www.breves.pa.gov.br"
+},
+{
+    "title": "Bujaru",
+    "content": "Cidade tranquila com economia baseada na agricultura e extrativismo.",
+    "description": "Descubra o charme de Bujaru e suas tradições.",
+    "url": "https://www.bujaru.pa.gov.br"
+},
+{
+    "title": "Cachoeira do Arari",
+    "content": "Localizada no coração da ilha do Marajó, famosa por suas manifestações culturais e belezas naturais.",
+    "description": "Conheça Cachoeira do Arari, um lugar de tradição e natureza.",
+    "url": "https://www.cachoeiradoarari.pa.gov.br"
+},
+{
+    "title": "Cachoeira do Piriá",
+    "content": "Cidade jovem cercada por belas paisagens naturais, com destaque para rios e cachoeiras.",
+    "description": "Explore Cachoeira do Piriá e suas belezas escondidas.",
+    "url": "https://www.cachoeiradopiria.pa.gov.br"
+},
+{
+    "title": "Cametá",
+    "content": "Um dos municípios mais antigos do Pará, conhecido por seu carnaval e cultura ribeirinha.",
+    "description": "Descubra Cametá, onde tradição e beleza se encontram.",
+    "url": "https://www.cameta.pa.gov.br"
+},
+{
+    "title": "Canaã dos Carajás",
+    "content": "Famosa por sua economia pujante ligada à mineração e agricultura.",
+    "description": "Conheça Canaã dos Carajás, um polo de desenvolvimento no Pará.",
+    "url": "https://www.canaadoscarajas.pa.gov.br"
+},
+{
+    "title": "Capanema",
+    "content": "Cidade próspera com forte presença no setor agrícola e tradicionalismo cultural.",
+    "description": "Explore Capanema e sua rica diversidade cultural e econômica.",
+    "url": "https://www.capanema.pa.gov.br"
+},
+{
+    "title": "Capitão Poço",
+    "content": "Reconhecida como a 'Capital Mundial da Laranja', devido à sua forte produção cítrica.",
+    "description": "Descubra Capitão Poço, um lugar de sabor e paisagens marcantes.",
+    "url": "https://www.capitaopoco.pa.gov.br"
+},
+{
+    "title": "Castanhal",
+    "content": "Conhecida como a 'Cidade Modelo', com uma economia diversificada e infraestrutura moderna.",
+    "description": "Visite Castanhal, um dos principais polos urbanos do Pará.",
+    "url": "https://www.castanhal.pa.gov.br"
+},
+{
+    "title": "Chaves",
+    "content": "Localizada na Ilha do Marajó, oferece paisagens únicas de campos alagados e manguezais.",
+    "description": "Explore Chaves, um paraíso natural no Pará.",
+    "url": "https://www.chaves.pa.gov.br"
+},
+{
+    "title": "Colares",
+    "content": "Famosa por suas praias e mistérios envolvendo avistamentos de OVNIs.",
+    "description": "Conheça Colares, onde beleza natural encontra o sobrenatural.",
+    "url": "https://www.colares.pa.gov.br"
+},
+{
+    "title": "Conceição do Araguaia",
+    "content": "Uma cidade às margens do Rio Araguaia, famosa por suas praias durante o verão.",
+    "description": "Descubra Conceição do Araguaia, um destino de sol e tranquilidade.",
+    "url": "https://www.conceicaodoaraguaia.pa.gov.br"
+},
+{
+    "title": "Concórdia do Pará",
+    "content": "Cidade com forte presença da agricultura e acolhedora comunidade local.",
+    "description": "Explore Concórdia do Pará, um refúgio tranquilo e produtivo.",
+    "url": "https://www.concordiadopara.pa.gov.br"
+},
+{
+    "title": "Cumaru do Norte",
+    "content": "Cidade pequena com grande potencial agrícola e um estilo de vida pacato.",
+    "description": "Descubra Cumaru do Norte, um lugar de simplicidade e trabalho.",
+    "url": "https://www.cumarudonorte.pa.gov.br"
+},
+{
+    "title": "Curionópolis",
+    "content": "Conhecida pela Serra dos Carajás e seu papel na mineração do Pará.",
+    "description": "Visite Curionópolis, onde desenvolvimento e natureza coexistem.",
+    "url": "https://www.curionopolis.pa.gov.br"
+},
+{
+    "title": "Curralinho",
+    "content": "Cidade ribeirinha localizada na Ilha do Marajó, com tradições culturais marcantes.",
+    "description": "Conheça Curralinho, um lugar de história e paisagens fluviais.",
+    "url": "https://www.curralinho.pa.gov.br"
 }
+
 
 
 ]

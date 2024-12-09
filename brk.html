@@ -1,36 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RSSN manchete</title>
-    <style>
-    body{
-        margin:0;
-        padding:0;
-        margin-bottom: 0px;
-        font-size: 1rem; /* Use rem ou em */ max-width: 100%; box-sizing: border-box;
-    }
-
-
-        h1{font-size:1rem;margin:0;padding:0;margin-left: 4px;font-weight: bold;margin-bottom: 0px;}
-        .rssn h1 { font-size: 40px; color: red;margin:0;padding:0}
-        .rssn a {color: rgb(253, 170, 45);}
-        .rssn a:visited {color: rgb(255, 189, 23);}
-        .rssn a:hover {color: rgb(255, 255, 255);}
-        .pgn h1 { font-size: 40px; color: green; }
-        .mfo h1 { font-size: 30px; color: blue; margin:0;padding:0;}
-        .horos h1,a {line-height: 12px;margin-top:6px;color: rgb(56, 26, 67);}
-        </style>  
+    <link rel="stylesheet" href="brkstyles.css">
+    <style></style>  
 </head>
 <body>
     <h1 id="header"><a target="_blank" href="https://rssnbrasil.blogspot.com/2024/12/ainda-estou-aqui-e-indicado-ao-globo-de.html">"Ainda Estou Aqui" recebe 2 indicações ao Globo de Ouro</a></h1>        
         <script>
-            // Pega o parâmetro "style" da URL
             const params = new URLSearchParams(window.location.search);
             const style = params.get('style');
     
-            // Aplica a classe correspondente ao parâmetro
             if (style) {
                 document.body.classList.add(style);
             }
