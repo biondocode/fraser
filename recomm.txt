@@ -1,1 +1,2 @@
+pagespeed REC. avoid of non-composite animations; RSX-1; element 
 pagespeed REC. the removal of X/Twitter from RSX-1; alleged long-tsk (131ms)
