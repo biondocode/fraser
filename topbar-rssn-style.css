@@ -53,13 +53,12 @@
     color: #00aaff;
   }
   
-  /* Botão de menu responsivo */
   .custom-menu-toggle {
     display: none;
-    color: #fff;
+    color: #ffffff;
     font-size: 1.2rem;
     cursor: pointer;
-    padding: 3px; /* Adicionado padding para afastar da tela */
+    padding: 10px; /* Melhor espaçamento para acessibilidade */
   }
   
   /* Responsividade */
