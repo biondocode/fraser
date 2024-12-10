@@ -5,246 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C-Search</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-<style>
-
- body { font-family: Arial, sans-serif; }
-.result-item {
-
-    max-width:auto;
-    min-width:50%;
-    /* margin: 0 auto; */
-    /* float:right; */
-    /* height: 100px;  */
-    /* display:grid; */
-    /* max-height: 119px; */
-    /* background:linear-gradient(919deg, rgba(151, 227, 226, 0.163),white); */
-    /* display:flexbox; */
-    border-radius: 2px;
-    box-shadow: inset 20px 30px 10px rgba(255, 255, 255, 0.841);
-    margin-left: 130px; 
-    /* padding-left: 23px;  */
-    /* background-color: #f2f2f2e8;padding-top: 1px; */
-    border-bottom: 3px solid rgba(240, 244, 246, 0.538);
-    padding-bottom: 4px;
- }
-.highlight { 
-    color: rgb(39, 111, 112);
-
-    font-weight: bold; }
-.result-link {
-
-    position: relative;
-    top:-10px;
-    /* display: flexbox; */
-    /* margin-top: 0 auto; */
-    /* margin-bottom: 20px; */
-    color: blue; 
-    text-decoration: underline;
-    /* float: right; */
-    /* top: 10px;  */
-}
-.result-header { 
-    font-weight: bold; 
-    /* margin-top:13px; */
-    /* margin-right:5px; */
-    /* font-size: 124px;  */
-}
-.result-description {
-        /* float: left; */
-        /* bottom:1px; */
-        /* padding: 3px; */
-        /* display: flexbox; */
-        /* margin-right:14px; */
-        /* padding-left:10px; */
-        /* right:3px; */
-        /* font-style: italic;  */
-        font-size: 12px;
-        /* color: rgba(69, 119, 126, 0.732);  */
-        color: SlateGrey;
-        /* color: rgb(51, 16, 107);  */
-        /* font-weight: bold; */
-        /* position:relative; */
-        /* top:20px; */
-    }
-
-    h2{
-        font-size: 43px;
-        text-align: center;
-    }
-
-    h3{
-        font-size: 16px;
-        margin: auto 0;
-        position: static;
-        padding-top: 14px;
-
-        /* text-align: center; */
-    }
-
-    input {
-        align-self: center;
-    }
-
-    /* hr {border-color:aqua} */
-
-    span.a {
-        color:brown;
-    }
-    
-    span.b {
-        color:green;
-    }
-    span.s {
-        color:blue;
-    }
-    h2.purp{
-        color: rgb(39, 111, 112);
-    }
-
-    hr {
-        border-color: rgb(64, 175, 160);
-    }
-
-    #searchInput {
-        width: 300px;
-        padding: 2px;
-        margin: 10px 0;
-        box-sizing: border-box;
-        border: 2px solid #ccc;
-        border-radius: 5px;
-        font-size: 16px;
-        background-color: #f9f9f9;
-        color: #333;
-        outline: none;
-      }
-      
-      #searchInput:focus {
-        border-color: #007BFF;
-        background-color: #fff;
-        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-      }
-      
-          
-      #searchInput:focus {
-        border-color: #2c6981;
-        background-color: #fff;
-        box-shadow: 0 0 5px rgba(0, 162, 255, 0.5);
-      }
-      
-      #searchButton {
-        padding: 3px 8px;
-        margin: 3px 0;
-        background-color: #2691a1;
-        border: none;
-        border-radius: 5px;
-        color: #fff;
-        font-size: 14px;
-        cursor: pointer;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-      }
-      
-      #searchButton:hover {
-        background-color: #151413;
-      }
-      
-      #searchButton:active {
-        background-color: #004085;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      }
-      
-      #results-count {
-        font-size: 12px;
-        color: rgba(69, 119, 126, 0.732); 
-        margin-left: 10px;
-        font-weight: bold;
-      }
-    
-</style>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .result-item { max-width:auto; min-width:50%; border-radius: 2px; box-shadow: inset 20px 30px 10px rgba(255, 255, 255, 0.841); margin-left: 130px; border-bottom: 3px solid rgba(240, 244, 246, 0.538); padding-bottom: 4px; }
+    .highlight { color: rgb(39, 111, 112); font-weight: bold; }
+    .result-link { color: blue; text-decoration: underline; }
+    .result-description { font-size: 12px; color: SlateGrey; }
+    h2 { font-size: 43px; text-align: center; }
+    h3 { font-size: 16px; margin: auto 0; padding-top: 14px; }
+    input { align-self: center; }
+    #searchInput { width: 300px; padding: 2px; margin: 10px 0; border: 2px solid #ccc; border-radius: 5px; font-size: 16px; }
+    #searchButton { padding: 3px 8px; background-color: #2691a1; border: none; border-radius: 5px; color: #fff; cursor: pointer; }
+    #searchButton:hover { background-color: #151413; }
+    #results-count { font-size: 12px; color: rgba(69, 119, 126, 0.732); margin-left: 10px; font-weight: bold; }
+  </style>
 </head>
 <body>
+  <hr>
+  <center>
+    <input type="text" id="searchInput" placeholder="Digite aqui para buscar...">
+    <button id="searchButton">Pesquisar</button>
+    <div id="results-count">Total de 0 resultado(s) encontrado(s)</div>
+  </center>
+  <div id="results"></div>
+  <hr>
 
-<!-- <h2 class="purp">busca[013]</h2>
-Welcome -->
-<hr>
-    <center><input type="text" id="searchInput" placeholder="Digite aqui para buscar...">
-<button id="searchButton">Pesquisar</button>
+  <script>
+    let dataItems = [];
 
-<div id="results-count">Total de 0 resultado(s) encontrado(s)</center></div><p></p>
-<div id="results"></div>
-<hr>
+    async function loadData() {
+      try {
+        const response = await fetch('b13-parana.json');
+        dataItems = await response.json();
+      } catch (error) {
+        console.error('Erro ao carregar os dados:', error);
+      }
+    }
 
-<script>// Função de busca
-   let dataItems = []; // Variável global para armazenar os dados
+    window.onload = function() {
+      loadData(); // Carregar dados assim que a página for carregada
+    }
 
-// Função para carregar os dados
-async function loadData() {
-  try {
-    const response = await fetch('b13-parana.json');  // Caminho para o arquivo JSON
-    dataItems = await response.json();
-  } catch (error) {
-    console.error('Erro ao carregar os dados:', error);
-  }
-}
+    const searchInput = document.getElementById('searchInput');
+    const resultsContainer = document.getElementById('results');
 
+    function highlightMatches(text, queryWords) {
+      let highlightedText = text;
+      queryWords.forEach(word => {
+        const regex = new RegExp(`(${word})`, 'gi');
+        highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+      });
+      return highlightedText;
+    }
 
-   function sortResults(filteredItems) {
-  // Aqui estamos ordenando os resultados por título (alfabeticamente), mas você pode modificar conforme necessário
-  return filteredItems.sort((a, b) => a.title.localeCompare(b.title)); // Ordena alfabeticamente por título
-}
-   function search() {
+    function sortResults(filteredItems) {
+      return filteredItems.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    function search() {
       const query = searchInput.value.toLowerCase().trim();
-    
-      resultsContainer.innerHTML = ''; // Limpa os resultados anteriores
-    
+      resultsContainer.innerHTML = '';
       if (query) {
-        const queryWords = query.split(/\s+/); // Divide a busca em palavras separadas por espaços
-    
-        // Filtra os resultados que contenham todas as palavras da busca
+        const queryWords = query.split(/\s+/);
         const filteredItems = dataItems.filter(item => {
           const searchableText = `${item.title} ${item.content} ${item.description}`.toLowerCase();
-          return queryWords.every(word => searchableText.includes(word)); // Verifica se todas as palavras estão presentes
+          return queryWords.every(word => searchableText.includes(word));
         });
-    
-        // Aplica a ordenação aos resultados filtrados
         const sortedItems = sortResults(filteredItems);
-    
-        // Exibe a contagem de resultados
         document.getElementById("results-count").textContent = `Total de ${sortedItems.length} resultado(s) encontrado(s).`;
-    
-        // Exibe os resultados ou mensagem de 'Nenhum resultado encontrado'
+
         if (sortedItems.length > 0) {
           sortedItems.forEach(item => {
             const highlightedTitle = highlightMatches(item.title, queryWords);
             const highlightedContent = highlightMatches(item.content, queryWords);
-    
-            // Cria o contêiner do resultado
+
             const resultItem = document.createElement('div');
             resultItem.classList.add('result-item');
-    
-            // Adiciona o título com destaque
+
             const titleElement = document.createElement('h3');
             titleElement.innerHTML = highlightedTitle;
             resultItem.appendChild(titleElement);
-    
-            // Adiciona a descrição
+
             const descriptionElement = document.createElement('span');
             descriptionElement.classList.add('result-description');
             descriptionElement.innerText = item.description;
             resultItem.appendChild(descriptionElement);
-    
-            // Adiciona o conteúdo principal com destaque
+
             const contentElement = document.createElement('p');
             contentElement.innerHTML = highlightedContent;
             resultItem.appendChild(contentElement);
-    
-            // Cria o link "Saiba mais"
+
             const link = document.createElement('a');
             link.href = item.url;
-            link.textContent = `Saiba mais sobre ${item.title}`; // Ajusta o texto do link
+            link.textContent = `Saiba mais sobre ${item.title}`;
             link.target = "_blank";
             link.classList.add('result-link');
-    
+
             resultItem.appendChild(link);
             resultsContainer.appendChild(resultItem);
           });
@@ -256,33 +112,8 @@ async function loadData() {
         resultsContainer.innerHTML = '<div>Por favor, digite um termo de busca.</div>';
       }
     }
-    </script>
-  
 
-
-<script>link.href = item.url; // Define o link com a URL do JSON
-    link.textContent = `Saiba mais sobre ${item.title}`; 
-    // Define o texto do link com o título
-    </script>
-
-
-<footer>
-   
-    <div id="results">
-        <!-- Resultados do buscador aparecerão aqui -->
-    </div>
-    
-<script>window.addEventListener('message', (event) => {
-    if (event.data.searchQuery) {
-        const iframeSearchInput = document.getElementById('searchInputIframe');
-        iframeSearchInput.value = event.data.searchQuery;
-        iframeSearchInput.dispatchEvent(new Event('input'));
-    }
-});
-</script>
-    
-</footer>
-
-
+    document.getElementById("searchButton").addEventListener('click', search);
+  </script>
 </body>
 </html>
