@@ -40,13 +40,14 @@
     margin-right: 25px; /* Afastamento entre os links e o menu hambúrguer */
   }
   
-  .custom-nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 0.9rem;
-    font-weight: 400;
-    transition: color 0.3s ease;
-  }
+/* Revisão para melhor contraste e transições */
+.custom-nav-links li a {
+  text-decoration: none;
+  color: #ffffff; /* Mantenha um bom contraste */
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: color 0.3s ease, background 0.3s ease; /* Transição melhorada */
+}
   
   .custom-nav-links li a:hover {
     color: #00aaff;
@@ -77,7 +78,7 @@
       width: 100%;
       padding: 10px 0;
       display: none; /* Esconde o menu inicialmente */
-      z-index: 999;
+      z-index: 1003;
     }
   
     .custom-nav-links.active {
