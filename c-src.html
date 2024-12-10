@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Busca 013</title>
+  <title>C-Search</title>
   <link rel="stylesheet" type="text/css" href="style.css">
 <style>
 
@@ -174,73 +174,60 @@ Welcome -->
 <div id="results"></div>
 <hr>
 
-<script>
-    const searchInput = document.getElementById('searchInput');
-    const searchButton = document.getElementById('searchButton');
-    const resultsContainer = document.getElementById('results');
-    let dataItems = []; // Variável para armazenar os dados carregados
-  
-    // Carrega os dados do arquivo JSON
-    async function loadData() {
-      try {
-        const response = await fetch('busca013.json');
-        dataItems = await response.json();
-      } catch (error) {
-        console.error('Erro ao carregar os dados:', error);
-      }
-    }
-  
-    // Função de busca
+<script>// Função de busca
     function search() {
       const query = searchInput.value.toLowerCase().trim();
-  
+    
       resultsContainer.innerHTML = ''; // Limpa os resultados anteriores
-  
+    
       if (query) {
         const queryWords = query.split(/\s+/); // Divide a busca em palavras separadas por espaços
-  
+    
         // Filtra os resultados que contenham todas as palavras da busca
         const filteredItems = dataItems.filter(item => {
           const searchableText = `${item.title} ${item.content} ${item.description}`.toLowerCase();
           return queryWords.every(word => searchableText.includes(word)); // Verifica se todas as palavras estão presentes
         });
-  
+    
+        // Aplica a ordenação aos resultados filtrados
+        const sortedItems = sortResults(filteredItems);
+    
         // Exibe a contagem de resultados
-        document.getElementById("results-count").textContent = `Total de ${filteredItems.length} resultado(s) encontrado(s).`;
-  
+        document.getElementById("results-count").textContent = `Total de ${sortedItems.length} resultado(s) encontrado(s).`;
+    
         // Exibe os resultados ou mensagem de 'Nenhum resultado encontrado'
-        if (filteredItems.length > 0) {
-          filteredItems.forEach(item => {
+        if (sortedItems.length > 0) {
+          sortedItems.forEach(item => {
             const highlightedTitle = highlightMatches(item.title, queryWords);
             const highlightedContent = highlightMatches(item.content, queryWords);
-  
+    
             // Cria o contêiner do resultado
             const resultItem = document.createElement('div');
             resultItem.classList.add('result-item');
-  
+    
             // Adiciona o título com destaque
             const titleElement = document.createElement('h3');
             titleElement.innerHTML = highlightedTitle;
             resultItem.appendChild(titleElement);
-  
+    
             // Adiciona a descrição
             const descriptionElement = document.createElement('span');
             descriptionElement.classList.add('result-description');
             descriptionElement.innerText = item.description;
             resultItem.appendChild(descriptionElement);
-  
+    
             // Adiciona o conteúdo principal com destaque
             const contentElement = document.createElement('p');
             contentElement.innerHTML = highlightedContent;
             resultItem.appendChild(contentElement);
-  
+    
             // Cria o link "Saiba mais"
             const link = document.createElement('a');
             link.href = item.url;
-            link.textContent = `${item.url}`;
+            link.textContent = `Saiba mais sobre ${item.title}`; // Ajusta o texto do link
             link.target = "_blank";
             link.classList.add('result-link');
-  
+    
             resultItem.appendChild(link);
             resultsContainer.appendChild(resultItem);
           });
@@ -252,24 +239,7 @@ Welcome -->
         resultsContainer.innerHTML = '<div>Por favor, digite um termo de busca.</div>';
       }
     }
-  
-    // Função para destacar correspondências
- function highlightMatches(text, queryWords) {
-  let highlightedText = text;
-
-  queryWords.forEach(word => {
-    const regex = new RegExp(`(?<!<[^>]*)(${word})(?![^<]*>)`, 'gi');
-    highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
-  });
-
-  return highlightedText;
-}
-  
-    // Carrega os dados e adiciona o evento de busca
-    loadData().then(() => {
-      searchButton.addEventListener('click', search);
-    });
-  </script>
+    </script>
   
 
 
