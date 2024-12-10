@@ -175,7 +175,24 @@ Welcome -->
 <hr>
 
 <script>// Função de busca
-    function search() {
+   let dataItems = []; // Variável global para armazenar os dados
+
+// Função para carregar os dados
+async function loadData() {
+  try {
+    const response = await fetch('data.json');  // Caminho para o arquivo JSON
+    dataItems = await response.json();
+  } catch (error) {
+    console.error('Erro ao carregar os dados:', error);
+  }
+}
+
+
+   function sortResults(filteredItems) {
+  // Aqui estamos ordenando os resultados por título (alfabeticamente), mas você pode modificar conforme necessário
+  return filteredItems.sort((a, b) => a.title.localeCompare(b.title)); // Ordena alfabeticamente por título
+}
+   function search() {
       const query = searchInput.value.toLowerCase().trim();
     
       resultsContainer.innerHTML = ''; // Limpa os resultados anteriores
