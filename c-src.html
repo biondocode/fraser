@@ -180,7 +180,7 @@ Welcome -->
 // Função para carregar os dados
 async function loadData() {
   try {
-    const response = await fetch('data.json');  // Caminho para o arquivo JSON
+    const response = await fetch('b13-parana.json');  // Caminho para o arquivo JSON
     dataItems = await response.json();
   } catch (error) {
     console.error('Erro ao carregar os dados:', error);
