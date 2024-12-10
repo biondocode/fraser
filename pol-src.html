@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C-Search</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; }
+    .result-item { max-width:auto; min-width:50%; border-radius: 2px; box-shadow: inset 20px 30px 10px rgba(255, 255, 255, 0.841); margin-left: 130px; border-bottom: 3px solid rgba(240, 244, 246, 0.538); padding-bottom: 4px; }
+    .highlight { color: rgb(39, 111, 112); font-weight: bold; }
+    .result-link { color: blue; text-decoration: underline; }
+    .result-description { font-size: 12px; color: SlateGrey; }
+    h2 { font-size: 43px; text-align: center; }
+    h3 { font-size: 16px; margin: auto 0; padding-top: 14px; }
+    input { align-self: center; }
+    #searchInput { width: 300px; padding: 2px; margin: 10px 0; border: 2px solid #ccc; border-radius: 5px; font-size: 16px; }
+    #searchButton { padding: 3px 8px; background-color: #2691a1; border: none; border-radius: 5px; color: #fff; cursor: pointer; }
+    #searchButton:hover { background-color: #151413; }
+    #results-count { font-size: 12px; color: rgba(69, 119, 126, 0.732); margin-left: 10px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <hr>
+  <center>
+    <input type="text" id="searchInput" placeholder="Digite aqui para buscar...">
+    <button id="searchButton">Pesquisar</button>
+    <div id="results-count">Total de 0 resultado(s) encontrado(s)</div>
+  </center>
+  <div id="results"></div>
+  <hr>
+
+  <script>
+    let dataItems = [];
+
+    async function loadData() {
+      try {
+        const response = await fetch('pol-src.json');
+        dataItems = await response.json();
+      } catch (error) {
+        console.error('Erro ao carregar os dados:', error);
+      }
+    }
+
+    window.onload = function() {
+      loadData(); // Carregar dados assim que a página for carregada
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const resultsContainer = document.getElementById('results');
+
+    function highlightMatches(text, queryWords) {
+      let highlightedText = text;
+      queryWords.forEach(word => {
+        const regex = new RegExp(`(${word})`, 'gi');
+        highlightedText = highlightedText.replace(regex, '<span class="highlight">$1</span>');
+      });
+      return highlightedText;
+    }
+
+    function sortResults(filteredItems) {
+      return filteredItems.sort((a, b) => a.title.localeCompare(b.title));
+    }
+
+    function search() {
+      const query = searchInput.value.toLowerCase().trim();
+      resultsContainer.innerHTML = '';
+      if (query) {
+        const queryWords = query.split(/\s+/);
+        const filteredItems = dataItems.filter(item => {
+          const searchableText = `${item.title} ${item.content} ${item.description}`.toLowerCase();
+          return queryWords.every(word => searchableText.includes(word));
+        });
+        const sortedItems = sortResults(filteredItems);
+        document.getElementById("results-count").textContent = `Total de ${sortedItems.length} resultado(s) encontrado(s).`;
+
+        if (sortedItems.length > 0) {
+          sortedItems.forEach(item => {
+            const highlightedTitle = highlightMatches(item.title, queryWords);
+            const highlightedContent = highlightMatches(item.content, queryWords);
+
+            const resultItem = document.createElement('div');
+            resultItem.classList.add('result-item');
+
+            const titleElement = document.createElement('h3');
+            titleElement.innerHTML = highlightedTitle;
+            resultItem.appendChild(titleElement);
+
+            const descriptionElement = document.createElement('span');
+            descriptionElement.classList.add('result-description');
+            descriptionElement.innerText = item.description;
+            resultItem.appendChild(descriptionElement);
+
+            const contentElement = document.createElement('p');
+            contentElement.innerHTML = highlightedContent;
+            resultItem.appendChild(contentElement);
+
+            const link = document.createElement('a');
+            link.href = item.url;
+            link.textContent = `${item.url}`;
+            link.target = "_blank";
+            link.classList.add('result-link');
+
+            resultItem.appendChild(link);
+            resultsContainer.appendChild(resultItem);
+          });
+        } else {
+          resultsContainer.innerHTML = '<div>Nenhum político encontrado.</div>';
+        }
+      } else {
+        document.getElementById("results-count").textContent = "Total de 0 políticos(s) encontrado(s).";
+        resultsContainer.innerHTML = '<div>Por favor, digite um termo de busca.</div>';
+      }
+    }
+
+    document.getElementById("searchButton").addEventListener('click', search);
+  </script>
+</body>
+</html>
