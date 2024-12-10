@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="portalsimples.css">
     <link rel="stylesheet" href="topbar-rssn-style.css">
-    <script src="https://bndco.github.io/fraser/topbar-rssn-ctrl.js"></script>
+    <script src="topbar-rssn-ctrl.js"></script>
 <style>
     body{
         * {
@@ -373,6 +373,26 @@
         <li><a href="#busca">Busca</a></li>
         <li><a href="#videos">Vídeos</a></li>
       </ul>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelector('.custom-nav-links');
+            const menuToggle = document.querySelector('.custom-nav-menu-toggle'); // Ajustado
+        
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        
+            // Submenu toggle
+            const submenuToggle = document.querySelector('.custom-submenu-toggle');
+            const submenu = document.querySelector('.custom-submenu');
+        
+            submenuToggle.addEventListener('click', () => {
+                submenu.classList.toggle('active');
+            });
+        });
+        </script>
+        
     
 </body>
 </html>
